@@ -30,6 +30,7 @@ nav li {
 }
 
 h1 {
+  display: inline-block;
   font-size: 3em;
   font-family: var(--Amatic);
   font-weight: 1000;
@@ -101,4 +102,9 @@ a:hover {
 
 .panels p {
   cursor: pointer;
+}
+
+
+.carousel-item {
+  back
 }
