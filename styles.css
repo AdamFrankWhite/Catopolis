@@ -35,6 +35,10 @@ h1 {
   font-weight: 1000;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .jumbotron {
   height: 500px;
   background-image: url("images/kitten1.jpg");
@@ -56,7 +60,7 @@ h1 {
   color: rgba(255,255,255, 0.5);
   margin-top: 0.5em;
   padding-left: 0;
-  /* display: none; */
+  display: none;
   position: absolute;
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -94,3 +98,7 @@ h1 {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.panels p {
+  cursor: pointer;
+}
