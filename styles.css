@@ -2,15 +2,29 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: slategray;
+}
+
 :root {
   --Amatic: 'Amatic SC', cursive;
+  --lm: 20px;
 }
 body {
   font-size: 16px;
+  max-width: 1400px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+main {
+  max-width: 1500px;
+  margin: auto;
 }
 
 nav {
   text-transform: uppercase;
+  margin: auto;
 }
 
 nav li {
@@ -24,40 +38,43 @@ nav li {
 
 #logo {
   height: auto;
-  width: 200px;
+  width: 175px;
   border-radius: 10%;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 h1 {
   display: inline-block;
-  font-size: 3em;
+  font-size: 4.5em;
   font-family: var(--Amatic);
   font-weight: 1000;
+  text-shadow: 1px 1px 2px black;
 }
 
-a:hover {
-  text-decoration: none;
+h2 {
+  font-family: var(--Amatic);
+  font-size: 4em;
+  padding: 0 var(--lm);
+  font-weight: 700;
 }
 
-.jumbotron {
-  height: 500px;
-  background-image: url("images/kitten1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+header p {
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: 800;
+  font-family: var(--Amatic);
+  padding-left: 3.5em;
+  margin-top: -0.5em;
 }
-
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: relative;
-  display: inline-block;
+  /* position: relative; */
+  /* display: inline-block; */
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  background-color: white;
   color: rgba(255,255,255, 0.5);
   margin-top: 0.5em;
   padding-left: 0;
@@ -95,10 +112,25 @@ a:hover {
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+a:hover {
+  text-decoration: none;
+}
+
+.jumbotron {
+  height: 500px;
+  background-image: url("images/kitten1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
 
 .panels p {
   cursor: pointer;
@@ -107,4 +139,16 @@ a:hover {
 
 .carousel-item {
   back
+}
+
+.card-group {
+  margin: 0 var(--lm);
+}
+
+.card-img-top {
+  height: 300px;
+}
+
+@media (min-width: 768px) {
+  .dropdown:hover .dropdown-content {display: block;}
 }
