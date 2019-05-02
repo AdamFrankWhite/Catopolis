@@ -6,10 +6,15 @@ html {
   background-color: slategray;
 }
 
-:root {
-  --Amatic: 'Amatic SC', cursive;
-  --lm: 20px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Amatic SC", cursive;
 }
+
 body {
   font-size: 16px;
   max-width: 1400px;
@@ -18,8 +23,15 @@ body {
 }
 
 main {
+  width: 95%;
   max-width: 1500px;
   margin: auto;
+}
+
+main p:first-child {
+  margin: 30px;
+  font-style: italic;
+  padding-left: 5px;
 }
 
 nav {
@@ -35,7 +47,6 @@ nav li {
   list-style: none;
 }
 
-
 #logo {
   height: auto;
   width: 175px;
@@ -46,23 +57,30 @@ nav li {
 h1 {
   display: inline-block;
   font-size: 4.5em;
-  font-family: var(--Amatic);
+  font-family: "Amatic SC", cursive;
   font-weight: 1000;
   text-shadow: 1px 1px 2px black;
 }
 
 h2 {
-  font-family: var(--Amatic);
+  font-family: "Amatic SC", cursive;
   font-size: 4em;
-  padding: 0 var(--lm);
+  padding: 0 30px;
   font-weight: 700;
+}
+
+.panel h3 {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px black;
+  font-family: "Amatic SC", cursive;
 }
 
 header p {
   font-style: italic;
   font-size: 1.5em;
   font-weight: 800;
-  font-family: var(--Amatic);
+  font-family: "Amatic SC", cursive;
   padding-left: 3.5em;
   margin-top: -0.5em;
 }
@@ -75,19 +93,18 @@ header p {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  color: rgba(255,255,255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   margin-top: 0.5em;
   padding-left: 0;
   display: none;
   position: absolute;
   min-width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-
   padding: 0.5em 0;
   text-decoration: none;
   display: block;
@@ -112,10 +129,10 @@ header p {
 }
 
 /* Show the dropdown menu on hover */
-
-
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
 
 a:hover {
   text-decoration: none;
@@ -129,20 +146,13 @@ a:hover {
   background-size: cover;
 }
 
-
-
-
-.panels p {
+.panels p:hover {
   cursor: pointer;
-}
-
-
-.carousel-item {
-  back
+  color: blue;
 }
 
 .card-group {
-  margin: 0 var(--lm);
+  margin: 0 30px;
 }
 
 .card-img-top {
@@ -150,5 +160,84 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 }
+#toc_container {
+  background: #f9f9f9 none repeat scroll 0 0;
+  border: 1px solid #aaa;
+  display: table;
+  font-size: 95%;
+  margin-bottom: 1em;
+  padding: 20px;
+  width: auto;
+  margin: auto;
+}
+
+.toc_title {
+  font-weight: 700;
+  text-align: center;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li {
+  list-style: outside none none !important;
+}
+
+.main-content {
+  width: 80%;
+  margin: auto;
+}
+.main-content h3 {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.flex-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+aside {
+  flex-basis: 30%;
+  background-color: lightgray;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px;
+}
+
+.cat_pic {
+  display: flex;
+  border: black 1px solid;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cat_pic h3 {
+  background-color: black;
+  text-align: center;
+  color: white;
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 1px gray;
+}
+.cat_pic .cat_pic_resize {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.cat_pic table {
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cat_pic th, .cat_pic td {
+  padding: 2px 5px;
+}
+.cat_pic tr:nth-of-type(2n+1) {
+  background-color: coral;
+}
+
+/*# sourceMappingURL=styles.css.map */
